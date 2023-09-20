@@ -1,0 +1,137 @@
+.container{
+    margin: 0 auto;
+    max-width: 1188px;
+    padding: 3% 20px 3% 20px;
+}
+.wrapper-events {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( 300px,1fr));
+    grid-auto-rows: 732px;
+    gap: 30px;
+}
+.wrapper-event {
+    position: relative;
+    border: 1px solid var(--gray-gray-4, #E2E2E2);
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.05);
+
+}
+.event-img-wrap {
+    width: 100%;
+    height: 298px;
+    position: relative;
+}
+.event-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.event-status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: 35px;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px; 
+    padding-left: 30px;
+    align-items: center;
+}
+.event-descr-wrap {
+    padding: 30px;
+    
+}
+.event-info-wrap {
+    display: flex;
+}
+.event-info {
+    margin-right:  10px ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 19px;
+    padding: 1px 10px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+
+}
+.event-type {
+    color:  #666;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; 
+
+}
+.event-title {
+    margin-top: 15px;
+    color: #244796;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+}
+.event-details {
+    color: var(--666666-p, #666);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    margin-top: 15px;
+}
+.event-link-wrap{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 30px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.event-link-wrap svg{
+   padding-top: 4px;
+}
+.event-link {
+    
+    color: #5D99D2;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.event-title-free_1 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+.event-title-free_2 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+}
+
+@media(max-width:1200px){
+    .wrapper-events {
+
+        grid-auto-rows: auto;
+        
+    }
+    .wrapper-event{
+        padding-bottom: 30px;
+    }
+}
